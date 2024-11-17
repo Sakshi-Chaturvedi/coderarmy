@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7rem;
+  gap: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact_heading {
+  font-size: 3.5rem;
+  color: rgb(10, 165, 10);
+  /* font-family: "Edu AU VIC WA NT Pre", cursive; */
+}
+
+.contact_form {
+  /* background-color: rgb(113, 95, 227); */
+  /* width: 100vw; */
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* font-family: "Arial", sans-serif; */
+  /* gap: 5rem; */
+  gap: 10rem;
+}
+
+.container {
+  width: 400px;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(255, 255, 255, 0.1); */
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 255, 0, 0.3);
+
+  /* gap: 4rem; */
+}
+
+form h2 {
+  color: rgb(10, 165, 10);
+  border-bottom: 3px solid rgb(10, 165, 10);
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px 10px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group input:valid {
+  border-bottom-color: #fff;
+}
+
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.input-group .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  /* background: rgba(255, 255, 255, 0.2); */
+  border-radius: 5px;
+  transition: height 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.input-group input:focus ~ .line,
+.input-group input:valid ~ .line {
+  height: 5px;
+  background: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: rgb(10, 165, 10);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  /* font-family: "Edu AU VIC WA NT Pre", cursive; */
+}
+
+button:hover {
+  background: rgb(228, 204, 204);
+  color: rgb(10, 165, 10);
+}
+
+/* Tablet-specific styles */
+@media (max-width: 1024px) and (min-width: 768px) {
+  footer {
+    gap: 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .contact_heading {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .contact_form {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .container {
+    width: 350px;
+    padding: 20px 15px;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+  }
+
+  form h2 {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    margin-bottom: 15px;
+  }
+
+  .input-group {
+    margin-bottom: 25px;
+  }
+
+  .input-group input {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+
+  .input-group label {
+    font-size: 14px;
+  }
+
+  .input-group input:focus ~ label,
+  .input-group input:valid ~ label {
+    font-size: 12px;
+  }
+
+  .input-group .line {
+    height: 1px;
+  }
+
+  .input-group input:focus ~ .line,
+  .input-group input:valid ~ .line {
+    height: 3px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+/* Media Query for Mobile specific devices */
+@media (max-width: 800px) and (min-width: 360px) {
+  footer {
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .contact_heading {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+
+  .contact_form {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .container {
+    width: 250px;
+    padding: 20px 15px;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+  }
+
+  .contact_image img{
+    width: 0;
+  }
+}
+

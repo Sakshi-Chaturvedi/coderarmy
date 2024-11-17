@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="../image/Screenshot__475_-removebg-preview.png" alt="" class="logo_img">
+            </div>
+
+            <!-- Hamburger Icon -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+
+            <!-- Navigation Links -->
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Hero Section -->
+        <div class="hero_section reveal" id="home">
+
+            <!-- Profile Image Section -->
+            <div class="image">
+                <img src="../image/photo-removebg-preview.png" alt="" class="profile_img">
+            </div>
+
+            <!-- Introduction Section -->
+            <div class="introduction">
+                <p class="greeting">Namaste,</p>
+                <p class="name">I'm <span class="my_name">Sakshi Chaturvedi</span></p>
+                <p class="profession">Web Developer</p>
+                <p class="small_intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Error voluptate
+                    eveniet ea voluptatum, aliquam in?</p>
+                <button class="btn">DownLoad CV</button>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social_media">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+
+
+
+        <!-- About Me Section -->
+        <div class="about_me fade-in-left" id="about">
+            <div class="introduction">
+                <h1 class="about_heading">About Me</h1>
+                <p class="about_text">I'm Sakshi, a passionate web developer on a journey to master building dynamic
+                    websites and applications. As a student of Information Technology, I’m eager to create seamless
+                    user
+                    experiences and dive into technologies like JavaScript and React.js. Let’s build a web that's as
+                    vibrant and innovative as the ideas we dream of!</p>
+            </div>
+
+            <div class="education_background">
+                <h2 class="education">Education</h2>
+                <div class="education_card">
+                    <p class="degree">Bachelor's Of Technology</p>
+                    <p class="college">ITM College , Gwalior</p>
+                    <p class="duration">Duration : 2021 - 2025</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Skills Section -->
+        <div class="skills_section fade-in-left" id="skills">
+            <div class="skill_heading">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-section">
+                <div class="skills-images">
+                    <img src="../image/css_image-removebg-preview.png" alt="CSS Logo" class="img">
+                    <img src="../image/png-transparent-html5-icon-_-html-social-network-icon-removebg-preview.png"
+                        alt="HTML Logo" class="img">
+                </div>
+                <div class="skills-range">
+                    <div class="skill">
+                        <label for="css-skill" class="skill_name">CSS</label>
+                        <input type="range" id="css-skill" min="0" max="100" value="80">
+                    </div>
+                    <div class="skill">
+                        <label for="html-skill" class="skill_name">HTML</label>
+                        <input type="range" id="html-skill" min="0" max="100" value="90">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer id="contact" class="right-fade-in">
+        <h2 class="contact_heading">Contact Me</h2>
+        <div class="contact_form">
+            <div class="container">
+                <form autocomplete="off">
+                    <h2>Contact Form</h2>
+                    <div class="input-group">
+                        <input type="text" name="first_name" id="f_name" required>
+                        <label for="f_name">First Name</label>
+                        <span class="line"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="last_name" id="l_name" required>
+                        <label for="l_name">Last Name</label>
+                        <span class="line"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="mail_id" id="m_id" required>
+                        <label for="m_id">Email Id</label>
+                        <span class="line"></span>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact_image">
+                <img src="../image/Screenshot__484_-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
